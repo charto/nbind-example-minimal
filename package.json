@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "emcc-path": "emcc-path",
+    "autogypi": "autogypi",
+    "node-gyp": "node-gyp",
+    "install": "autogypi --init-gyp -p nbind -s hello.cc && node-gyp configure build",
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "autogypi": "^0.2.1",
+    "nbind": "^0.2.0",
+    "node-gyp": "^3.3.1"
+  }
+}
